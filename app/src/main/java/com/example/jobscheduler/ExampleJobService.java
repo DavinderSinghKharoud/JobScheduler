@@ -50,7 +50,7 @@ public class ExampleJobService extends JobService {
     public boolean onStopJob(JobParameters jobParameters) {
         Log.d(TAG,"Job cancelled before completion");
 
-        jobCancelled = false;
+        jobCancelled = true;
         return true;
     }
 }
